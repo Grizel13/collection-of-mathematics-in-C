@@ -1,0 +1,24 @@
+/* The program calculates the sequence of the first five terms
+
+a_n = 3n + 1, a_1, a_2, a_3, a_4, a_5 ...
+
+Author: Grizel13
+10.12.2023 */
+
+#include <stdio.h>
+
+int main()
+{
+    int terms[5];
+    int i;
+
+    for( i = 0; i < 5; ++i)
+        terms[i] = 3 * (i + 1) + 1;
+
+    printf("The terms of the sequense are\n");
+
+    for(i = 0; i < 5; ++i)
+        printf("%d ", terms[i]);
+
+    return 0;
+}
